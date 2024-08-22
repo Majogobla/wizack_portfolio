@@ -1,37 +1,37 @@
 ---
-const personalImageAlt = "Marcos Godoy"
 import Badge from "@/components/Badge.astro"
-import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import WhatsAppIcon from "./icons/WhatsApp.astro"
 import MailIcon from "@/components/icons/Mail.astro"
 import SocialPill from "@/components/SocialPill.astro"
 ---
 
 <div class="max-w-xl">
   <div class="flex gap-4 mb-4">
-    <img  class="rounded-full shadow-lg size-16" src="/me.png" alt={personalImageAlt}/>
+    <img  class="rounded-full shadow-lg size-16 border-red-600 border-2 dark:border-0" src="https://pub-bbb93911fa15433fb34b379f5ae3f082.r2.dev/Wizack%20Profile%20Picture.jpg" alt="Wizack Logo"/>
 
-    <a href="https://www.linkedin.com/in/marcosjgodoyb/" target="_blank" rel="noopener" class="flex items-center transition md:justify-center md:hover:scale-105">
-      <Badge>Disponible para trabajar</Badge>
+    <a href="https://wa.me/50369395694" target="_blank" rel="noopener" class="flex items-center transition md:justify-center md:hover:scale-105">
+      <Badge>Contáctanos</Badge>
     </a>
   </div>
 
-  <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">Hey, soy Marcos</h1>
+  <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">Wizack</h1>
+  <h2 class="text-3xl font-bold tracking-tight text-gray-600 sm:text-4xl dark:text-gray-200">Agencia de Desarrollo de Software</h2>
 
   <p class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300">
-    Desarrollador Web Full-Stack con +2 años de experiencia.
-    <strong>Ingeniero electricista con una fuerte vocación para la programación</strong> 
-    De San Salvador, El Salvador. Especializado en crear aplicaciones web
+    En Wizack, diseñamos soluciones de software innovadoras para startups y pequeñas empresas. 
+    <strong>Automatiza tus tareas y facilita tu trabajo con nuestras aplicaciones y licencias de software.</strong> 
+    ¡Contáctanos hoy para impulsar tu negocio!
   </p>
 
   <nav class="flex flex-wrap gap-4 mt-8">
-    <SocialPill href="mailto:marcosjgodoyb@gmail.com">
+    <SocialPill href="mailto:wizackdesarrollador@gmail.com">
       <MailIcon class="size-4"/>
-      Contáctame
+      Contáctanos
     </SocialPill>
 
-    <SocialPill href="https://www.linkedin.com/in/marcosjgodoyb/">
-      <LinkedInIcon class="size-4" />
-      LinkedIn
+    <SocialPill href="https://wa.me/50369395694">
+      <WhatsAppIcon class="size-4" />
+      WhatsApp
     </SocialPill>
   </nav>
 </div>
